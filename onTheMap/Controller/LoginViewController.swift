@@ -45,6 +45,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
         UIApplication.shared.open(UdacityClientNetwork.Endpoints.udacitySignUp.url, options: [:], completionHandler: nil)
     }
     
+    
+    
     @IBAction func facebookLoginClick(_ sender: Any) {
         buttonEnabled(false, button: facebookLoginInButton)
     }

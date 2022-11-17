@@ -40,7 +40,7 @@
                                             </backgroundConfiguration>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="loginClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lOX-xp-2ja"/>
+                                            <action selector="loginButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E5J-HA-8m1"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -69,7 +69,7 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="signUpClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A1x-sh-j5j"/>
+                                            <action selector="signUpButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xs4-0o-AGG"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -87,8 +87,8 @@
                                     <action selector="facebookLoginClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KJV-yC-pJz"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="k7z-6H-ekl">
-                                <rect key="frame" x="197" y="527" width="20" height="20"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="cJh-yS-off">
+                                <rect key="frame" x="170" y="514" width="74" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -99,7 +99,9 @@
                             <constraint firstItem="0dJ-Ri-DZ2" firstAttribute="top" secondItem="g0X-vY-qqh" secondAttribute="bottom" constant="75.5" id="2Sv-Ez-8Y6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P5l-TW-sNu" secondAttribute="trailing" constant="45" id="FjA-H3-nTb"/>
                             <constraint firstItem="0dJ-Ri-DZ2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="H7b-EO-vcM"/>
-                            <constraint firstItem="k7z-6H-ekl" firstAttribute="top" secondItem="P5l-TW-sNu" secondAttribute="bottom" constant="21" id="V9b-7M-5C3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cJh-yS-off" secondAttribute="trailing" constant="170" id="MGg-TW-8xD"/>
+                            <constraint firstItem="cJh-yS-off" firstAttribute="top" secondItem="P5l-TW-sNu" secondAttribute="bottom" constant="8" symbolic="YES" id="NiW-xL-mbm"/>
+                            <constraint firstItem="cJh-yS-off" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="170" id="PGt-0P-YHZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rSH-68-SyZ" secondAttribute="bottom" constant="37" id="VFk-xL-GjM"/>
                             <constraint firstItem="P5l-TW-sNu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="XkC-RA-uce"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rSH-68-SyZ" secondAttribute="trailing" constant="45" id="cto-ZJ-jhS"/>
@@ -108,13 +110,11 @@
                             <constraint firstItem="g0X-vY-qqh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="iMF-M5-t2V"/>
                             <constraint firstItem="g0X-vY-qqh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="jrb-85-Hwu"/>
                             <constraint firstItem="rSH-68-SyZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="o5W-mg-EKY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k7z-6H-ekl" secondAttribute="trailing" constant="197" id="oLC-ub-hin"/>
-                            <constraint firstItem="k7z-6H-ekl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="197" id="pnH-pO-crm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="a35-dA-Pr6"/>
                     <connections>
-                        <outlet property="activityIndicator" destination="k7z-6H-ekl" id="ugc-pP-Hev"/>
+                        <outlet property="activityIndicator" destination="cJh-yS-off" id="dMe-5y-lqV"/>
                         <outlet property="emailTextField" destination="Hk9-Cg-JQT" id="scP-nT-jha"/>
                         <outlet property="facebookLoginInButton" destination="rSH-68-SyZ" id="arV-7W-nGJ"/>
                         <outlet property="loginButton" destination="7gF-zA-9mB" id="zU2-zo-2xd"/>
@@ -327,7 +327,7 @@
                         <outlet property="addLocationTextField" destination="Wjb-XQ-tjg" id="jR0-gh-aec"/>
                         <outlet property="addMoreDetailTextField" destination="aph-3m-j3q" id="kcG-nv-3wJ"/>
                         <outlet property="findOnMapButton" destination="eOI-ti-TsR" id="bMt-Fl-wBZ"/>
-                        <segue destination="mZN-os-COW" kind="show" id="HGY-29-i0L"/>
+                        <segue destination="mZN-os-COW" kind="show" identifier="NewLocationViewController" id="HGY-29-i0L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EQn-c2-Bvg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
