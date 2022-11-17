@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		5212B9502925E8E50019845E /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5212B94F2925E8E50019845E /* StudentTableViewCell.swift */; };
+		526D66D829263EF9002C3595 /* UdacityClientNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D66D729263EF9002C3595 /* UdacityClientNetwork.swift */; };
+		526D66DA29263F97002C3595 /* RequestHelperFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D66D929263F97002C3595 /* RequestHelperFunction.swift */; };
+		526D66DD2926407C002C3595 /* StudentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D66DC2926407C002C3595 /* StudentLocation.swift */; };
+		526D66DF292640E1002C3595 /* StudentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D66DE292640E1002C3595 /* StudentInformation.swift */; };
+		526D66E12926411A002C3595 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D66E02926411A002C3595 /* Location.swift */; };
+		526D66E529264206002C3595 /* PostStudentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D66E429264206002C3595 /* PostStudentLocation.swift */; };
+		526D66E729264228002C3595 /* UpdateStudentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D66E629264228002C3595 /* UpdateStudentLocation.swift */; };
+		526D66E929264264002C3595 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D66E829264264002C3595 /* Session.swift */; };
+		526D66EB29264295002C3595 /* StudentLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D66EA29264295002C3595 /* StudentLogin.swift */; };
+		526D66ED2926432A002C3595 /* StudentUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D66EC2926432A002C3595 /* StudentUserProfile.swift */; };
+		526D66EF29264367002C3595 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D66EE29264367002C3595 /* APIKeys.swift */; };
+		526D66F1292643C0002C3595 /* StudentsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D66F0292643C0002C3595 /* StudentsData.swift */; };
 		52EBACA5292504B900B07A48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EBACA4292504B900B07A48 /* AppDelegate.swift */; };
 		52EBACA7292504B900B07A48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EBACA6292504B900B07A48 /* SceneDelegate.swift */; };
 		52EBACA9292504B900B07A48 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EBACA8292504B900B07A48 /* LoginViewController.swift */; };
@@ -20,6 +32,18 @@
 
 /* Begin PBXFileReference section */
 		5212B94F2925E8E50019845E /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		526D66D729263EF9002C3595 /* UdacityClientNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityClientNetwork.swift; sourceTree = "<group>"; };
+		526D66D929263F97002C3595 /* RequestHelperFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHelperFunction.swift; sourceTree = "<group>"; };
+		526D66DC2926407C002C3595 /* StudentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLocation.swift; sourceTree = "<group>"; };
+		526D66DE292640E1002C3595 /* StudentInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInformation.swift; sourceTree = "<group>"; };
+		526D66E02926411A002C3595 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		526D66E429264206002C3595 /* PostStudentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStudentLocation.swift; sourceTree = "<group>"; };
+		526D66E629264228002C3595 /* UpdateStudentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStudentLocation.swift; sourceTree = "<group>"; };
+		526D66E829264264002C3595 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		526D66EA29264295002C3595 /* StudentLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLogin.swift; sourceTree = "<group>"; };
+		526D66EC2926432A002C3595 /* StudentUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUserProfile.swift; sourceTree = "<group>"; };
+		526D66EE29264367002C3595 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		526D66F0292643C0002C3595 /* StudentsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsData.swift; sourceTree = "<group>"; };
 		52EBACA1292504B900B07A48 /* onTheMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onTheMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52EBACA4292504B900B07A48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52EBACA6292504B900B07A48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +67,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		526D66D629263EBA002C3595 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				526D66D729263EF9002C3595 /* UdacityClientNetwork.swift */,
+				526D66D929263F97002C3595 /* RequestHelperFunction.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		526D66DB2926404C002C3595 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				526D66DC2926407C002C3595 /* StudentLocation.swift */,
+				526D66DE292640E1002C3595 /* StudentInformation.swift */,
+				526D66E02926411A002C3595 /* Location.swift */,
+				526D66E429264206002C3595 /* PostStudentLocation.swift */,
+				526D66E629264228002C3595 /* UpdateStudentLocation.swift */,
+				526D66E829264264002C3595 /* Session.swift */,
+				526D66EA29264295002C3595 /* StudentLogin.swift */,
+				526D66EC2926432A002C3595 /* StudentUserProfile.swift */,
+				526D66EE29264367002C3595 /* APIKeys.swift */,
+				526D66F0292643C0002C3595 /* StudentsData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		52EBAC98292504B900B07A48 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +112,8 @@
 		52EBACA3292504B900B07A48 /* onTheMap */ = {
 			isa = PBXGroup;
 			children = (
+				526D66DB2926404C002C3595 /* Models */,
+				526D66D629263EBA002C3595 /* Network */,
 				52EBACA4292504B900B07A48 /* AppDelegate.swift */,
 				52EBACA6292504B900B07A48 /* SceneDelegate.swift */,
 				52EBACB82925129B00B07A48 /* Controller */,
@@ -155,12 +207,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526D66E929264264002C3595 /* Session.swift in Sources */,
+				526D66DD2926407C002C3595 /* StudentLocation.swift in Sources */,
+				526D66E12926411A002C3595 /* Location.swift in Sources */,
+				526D66E529264206002C3595 /* PostStudentLocation.swift in Sources */,
 				52EBACA9292504B900B07A48 /* LoginViewController.swift in Sources */,
+				526D66D829263EF9002C3595 /* UdacityClientNetwork.swift in Sources */,
 				52EBACA5292504B900B07A48 /* AppDelegate.swift in Sources */,
+				526D66EF29264367002C3595 /* APIKeys.swift in Sources */,
+				526D66EB29264295002C3595 /* StudentLogin.swift in Sources */,
 				52EBACA7292504B900B07A48 /* SceneDelegate.swift in Sources */,
 				52EBACBC292518C600B07A48 /* MapViewController.swift in Sources */,
+				526D66ED2926432A002C3595 /* StudentUserProfile.swift in Sources */,
+				526D66DA29263F97002C3595 /* RequestHelperFunction.swift in Sources */,
 				52EBACBA292517D500B07A48 /* TableViewController.swift in Sources */,
+				526D66DF292640E1002C3595 /* StudentInformation.swift in Sources */,
+				526D66E729264228002C3595 /* UpdateStudentLocation.swift in Sources */,
 				5212B9502925E8E50019845E /* StudentTableViewCell.swift in Sources */,
+				526D66F1292643C0002C3595 /* StudentsData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

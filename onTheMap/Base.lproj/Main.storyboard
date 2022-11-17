@@ -39,6 +39,9 @@
                                                 <color key="strokeColor" systemColor="systemTealColor"/>
                                             </backgroundConfiguration>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="loginClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lOX-xp-2ja"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -65,6 +68,9 @@
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="signUpClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A1x-sh-j5j"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -77,7 +83,13 @@
                                         <color key="strokeColor" name="AccentColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="facebookLoginClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KJV-yC-pJz"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="k7z-6H-ekl">
+                                <rect key="frame" x="197" y="527" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
@@ -87,6 +99,7 @@
                             <constraint firstItem="0dJ-Ri-DZ2" firstAttribute="top" secondItem="g0X-vY-qqh" secondAttribute="bottom" constant="75.5" id="2Sv-Ez-8Y6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P5l-TW-sNu" secondAttribute="trailing" constant="45" id="FjA-H3-nTb"/>
                             <constraint firstItem="0dJ-Ri-DZ2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="H7b-EO-vcM"/>
+                            <constraint firstItem="k7z-6H-ekl" firstAttribute="top" secondItem="P5l-TW-sNu" secondAttribute="bottom" constant="21" id="V9b-7M-5C3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rSH-68-SyZ" secondAttribute="bottom" constant="37" id="VFk-xL-GjM"/>
                             <constraint firstItem="P5l-TW-sNu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="XkC-RA-uce"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rSH-68-SyZ" secondAttribute="trailing" constant="45" id="cto-ZJ-jhS"/>
@@ -95,10 +108,13 @@
                             <constraint firstItem="g0X-vY-qqh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="iMF-M5-t2V"/>
                             <constraint firstItem="g0X-vY-qqh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="jrb-85-Hwu"/>
                             <constraint firstItem="rSH-68-SyZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="o5W-mg-EKY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k7z-6H-ekl" secondAttribute="trailing" constant="197" id="oLC-ub-hin"/>
+                            <constraint firstItem="k7z-6H-ekl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="197" id="pnH-pO-crm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="a35-dA-Pr6"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="k7z-6H-ekl" id="ugc-pP-Hev"/>
                         <outlet property="emailTextField" destination="Hk9-Cg-JQT" id="scP-nT-jha"/>
                         <outlet property="facebookLoginInButton" destination="rSH-68-SyZ" id="arV-7W-nGJ"/>
                         <outlet property="loginButton" destination="7gF-zA-9mB" id="zU2-zo-2xd"/>
@@ -158,9 +174,16 @@
                                 <rect key="frame" x="20" y="88" width="374" height="774"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="iyx-mg-Lhs">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fhE-lf-DYR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iyx-mg-Lhs" firstAttribute="centerX" secondItem="s5V-O1-aGS" secondAttribute="centerX" id="VJ7-H3-LQg"/>
+                            <constraint firstItem="iyx-mg-Lhs" firstAttribute="centerY" secondItem="s5V-O1-aGS" secondAttribute="centerY" id="aeE-q1-VnQ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="on the map" id="nUA-bX-WDv">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="Udl-za-vLR"/>
@@ -169,6 +192,10 @@
                             <barButtonItem image="arrow.clockwise" catalog="system" id="WjX-FH-fFe"/>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="iyx-mg-Lhs" id="Jjd-KV-Ayr"/>
+                        <outlet property="studentMapView" destination="e3b-js-BoE" id="cjn-NR-ubd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="80F-Xs-uDZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -239,6 +266,9 @@
                             <barButtonItem image="arrow.clockwise" catalog="system" id="2tB-eg-pYs"/>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="studentTableView" destination="QPf-aV-z9z" id="Yu8-tR-fPr"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eSR-3z-RNz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
