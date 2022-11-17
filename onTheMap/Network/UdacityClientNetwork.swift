@@ -75,7 +75,7 @@ class UdacityClientNetwork : NSObject {
                 Auth.key = response.account.key
                 getLoggedInUserProfile(completion: { (success, error) in
                     if success {
-                        print("Logged in user's profile fetched.")
+                        print("Logged in user's profile found.")
                     }
                 })
                 completion(true, nil)
@@ -95,7 +95,7 @@ class UdacityClientNetwork : NSObject {
                 Auth.lastName = response.lastName
                 completion(true, nil)
             } else {
-                print("Failed to get user's profile.")
+                print("User's profile not found.")
                 completion(false, error)
             }
         }
