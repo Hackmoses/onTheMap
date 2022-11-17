@@ -20,6 +20,8 @@
 		526D66ED2926432A002C3595 /* StudentUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D66EC2926432A002C3595 /* StudentUserProfile.swift */; };
 		526D66EF29264367002C3595 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D66EE29264367002C3595 /* APIKeys.swift */; };
 		526D66F1292643C0002C3595 /* StudentsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D66F0292643C0002C3595 /* StudentsData.swift */; };
+		526D66F329265B76002C3595 /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D66F229265B76002C3595 /* AddLocationViewController.swift */; };
+		526D66F729266B1A002C3595 /* NewLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D66F629266B1A002C3595 /* NewLocationViewController.swift */; };
 		52EBACA5292504B900B07A48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EBACA4292504B900B07A48 /* AppDelegate.swift */; };
 		52EBACA7292504B900B07A48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EBACA6292504B900B07A48 /* SceneDelegate.swift */; };
 		52EBACA9292504B900B07A48 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EBACA8292504B900B07A48 /* LoginViewController.swift */; };
@@ -44,6 +46,8 @@
 		526D66EC2926432A002C3595 /* StudentUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUserProfile.swift; sourceTree = "<group>"; };
 		526D66EE29264367002C3595 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		526D66F0292643C0002C3595 /* StudentsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsData.swift; sourceTree = "<group>"; };
+		526D66F229265B76002C3595 /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
+		526D66F629266B1A002C3595 /* NewLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLocationViewController.swift; sourceTree = "<group>"; };
 		52EBACA1292504B900B07A48 /* onTheMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onTheMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52EBACA4292504B900B07A48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52EBACA6292504B900B07A48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 				52EBACB9292517D500B07A48 /* TableViewController.swift */,
 				52EBACBB292518C600B07A48 /* MapViewController.swift */,
 				5212B94F2925E8E50019845E /* StudentTableViewCell.swift */,
+				526D66F229265B76002C3595 /* AddLocationViewController.swift */,
+				526D66F629266B1A002C3595 /* NewLocationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -215,6 +221,7 @@
 				526D66D829263EF9002C3595 /* UdacityClientNetwork.swift in Sources */,
 				52EBACA5292504B900B07A48 /* AppDelegate.swift in Sources */,
 				526D66EF29264367002C3595 /* APIKeys.swift in Sources */,
+				526D66F729266B1A002C3595 /* NewLocationViewController.swift in Sources */,
 				526D66EB29264295002C3595 /* StudentLogin.swift in Sources */,
 				52EBACA7292504B900B07A48 /* SceneDelegate.swift in Sources */,
 				52EBACBC292518C600B07A48 /* MapViewController.swift in Sources */,
@@ -224,6 +231,7 @@
 				526D66DF292640E1002C3595 /* StudentInformation.swift in Sources */,
 				526D66E729264228002C3595 /* UpdateStudentLocation.swift in Sources */,
 				5212B9502925E8E50019845E /* StudentTableViewCell.swift in Sources */,
+				526D66F329265B76002C3595 /* AddLocationViewController.swift in Sources */,
 				526D66F1292643C0002C3595 /* StudentsData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
