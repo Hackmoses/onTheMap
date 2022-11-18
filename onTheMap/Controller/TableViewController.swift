@@ -42,6 +42,11 @@ class TableViewController: UITableViewController {
         
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+           return 80
+       }
+    
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let student = students[indexPath.row]
         openLink(student.mediaURL ?? "")
@@ -78,3 +83,4 @@ class TableViewController: UITableViewController {
     }
     
 }
+

@@ -30,7 +30,7 @@ class AddLocationViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func cancelButtonClick(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func findNewLocation(_ sender: Any) {

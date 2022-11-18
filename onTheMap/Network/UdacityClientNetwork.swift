@@ -35,7 +35,7 @@ class UdacityClientNetwork : NSObject {
             case .udacityLogin:
                 return Endpoints.base + "/session"
             case .getStudentLocations:
-                return Endpoints.base + "/StudentLocation?order=-updatedAt"
+                return Endpoints.base + "/StudentLocation?limit=100&order=-updatedAt"
             case .addLocation:
                 return Endpoints.base + "/StudentLocation"
             case .updateLocation:

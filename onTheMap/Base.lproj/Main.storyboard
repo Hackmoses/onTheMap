@@ -187,7 +187,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="on the map" id="nUA-bX-WDv">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Udl-za-vLR"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Udl-za-vLR">
+                            <connections>
+                                <action selector="logout:" destination="fch-LB-KVk" id="IoT-TL-7q5"/>
+                            </connections>
+                        </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem image="plus" catalog="system" id="NFL-KD-lG8">
                                 <connections>
@@ -337,7 +341,7 @@
         <!--Add Location-->
         <scene sceneID="jJd-sb-GZH">
             <objects>
-                <viewController id="mZN-os-COW" customClass="NewLocationViewController" customModule="onTheMap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewLocationViewController" id="mZN-os-COW" customClass="NewLocationViewController" customModule="onTheMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mAN-Fr-52f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -410,7 +414,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="94"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MKS-td-cdR">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_pin" translatesAutoresizingMaskIntoConstraints="NO" id="MKS-td-cdR">
                                             <rect key="frame" x="20" y="0.0" width="100" height="100"/>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OhY-Aq-VK5">
@@ -490,10 +494,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PXa-aY-5ci"/>
+        <segue reference="muS-Fw-26O"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
+        <image name="icon_pin" width="24" height="24"/>
         <image name="logo-u" width="62" height="62"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus" catalog="system" width="128" height="113"/>
